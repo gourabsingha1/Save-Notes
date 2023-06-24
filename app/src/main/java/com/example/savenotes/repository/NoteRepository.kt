@@ -1,6 +1,8 @@
-package com.example.notesapp
+package com.example.savenotes.repository
 
 import androidx.lifecycle.LiveData
+import com.example.savenotes.data.NoteDAO
+import com.example.savenotes.model.Note
 
 class NoteRepository(private val noteDAO: NoteDAO) {
 
@@ -12,6 +14,10 @@ class NoteRepository(private val noteDAO: NoteDAO) {
 
     suspend fun delete(note: Note) {
         noteDAO.delete(note)
+    }
+
+    suspend fun update(note: Note) {
+        noteDAO.update(note)
     }
 
 }

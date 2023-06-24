@@ -7,12 +7,24 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Save Notes"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NotesApp"
+        android:theme="@style/Theme.SaveNotes"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.AddActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.TrashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

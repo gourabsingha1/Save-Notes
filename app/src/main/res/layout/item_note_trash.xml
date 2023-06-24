@@ -8,7 +8,7 @@
     android:paddingBottom="1dp">
 
     <TextView
-        android:id="@+id/tvText"
+        android:id="@+id/tvTextTrash"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/grey"
@@ -17,29 +17,28 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleTrash"
         tools:text="Note" />
 
     <ImageView
-        android:id="@+id/ivDelete"
+        android:id="@+id/ivDeleteTrash"
         android:layout_width="30dp"
         android:layout_height="46dp"
         android:background="@color/grey"
         android:src="@drawable/baseline_delete_outline_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/baseline_delete_outline_24" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvTitleTrash"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         tools:text="Title"
-        android:textColor="@color/white"
         android:padding="12dp"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/ivDelete"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteTrash"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
