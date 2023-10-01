@@ -88,7 +88,7 @@ class TrashActivity : AppCompatActivity() {
                 for(document in it) {
                     // convert data from document to Note class
                     val note = document.toObject<Note>()
-                    notesList.add(note!!)
+                    notesList.add(note)
                 }
 
                 // add the list to recylerView

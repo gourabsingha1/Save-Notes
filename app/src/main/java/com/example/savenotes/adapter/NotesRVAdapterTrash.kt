@@ -65,7 +65,7 @@ class NotesRVAdapterTrash(
             .await()
         if(noteQuery.documents.isNotEmpty()) {
             for(document in noteQuery) {
-                noteCollectionRef.document(document.id).delete().await() // delete whole person
+                noteCollectionRef.document(document.id).delete().await() // delete whole note
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.example.savenotes
+package com.example.savenotes.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.savenotes.model.Note
+import com.example.savenotes.R
 
 class NotesRVAdapter(
     private val context: Context,
@@ -35,6 +36,7 @@ class NotesRVAdapter(
         viewHolder.itemView.setOnClickListener {
             noteClickUpdateInterface.onNoteClick(allNotes[viewHolder.adapterPosition])
         }
+
         return viewHolder
     }
 
